@@ -1,0 +1,33 @@
+
+
+
+
+.box {
+  background-color: rgb(255, 0, 0);
+  width: 100px;
+  height: 100px;
+
+  animation: rotating 1500ms ease-in-out 0ms both infinite ;
+}
+
+@keyframes rotating {
+  0% {
+    transform: translate(0px , 0px);
+  }
+  25% { 
+    background-color: blue;
+    transform: translate(0px , 100px);
+  }
+  50% {
+    background-color: green;
+    transform: translate(100px , 100px);
+  }
+  75% {
+    background-color: yellow;
+    transform: translate(100px , 0px);
+  }
+  100% {
+    background-color: rgb(255, 0, 0);
+    transform: translate(0px ,0px);
+  }
+}
